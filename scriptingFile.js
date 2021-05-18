@@ -1,112 +1,74 @@
 
+// immutable
 
-// //var //let and ///const
+let str="hello";
+// let message="We are learning Javascript today";
 
-
-
-
-// let message;
-// message="lerning JS";
-
-// alert(message);
+let name="Utkarsh";
 
 
-// let user="Utkarsh";
-// let  age=25;
-// let height=180;
+//template strings 
+
+//i need to use javascript variables inside of strings  (  ` )
+
+// let message= ` hello ${name} `;
+
+// console.log(message);
 
 
-// //Data Types 
+// console.log(message[2]);
 
 
+// //concatination 
+
+// let firstName="Utkarsh";
+// let lastName="Malik";
+
+// let fullName=firstName+" " +lastName;
+
+// console.log(fullName);
 
 
+//toString
+
+let status=true;
+
+console.log(status.toString());
 
 
+//concat 
 
 
+let firstString='Hi';
+let message=firstString.concat(' ','Utkarsh',' How are you ?');
 
-// let name="Utkarsh";
-// let x=5;
-// let value=true; 
-
-
-// //null 
-// let age=null;
-
-
-// //undefined
-// let newName;
-
-// alert(newName);
-
-
-
-// var user={name:"Utkarsh",age:25};
-
-
-// console.log(typeof(x));
+console.log(message);
 
 
 
+//split 
 
-let year="fr";
+let someBigString=" Hello utkarsh how are you ?";
 
-if(year=="may")
-{
-    console.log("The month is may");
-}
-else
-{
-    console.log("THe month is not may");
-}
+let substrings=someBigString.split(' ');
+
+console.log(substrings);
 
 
 
-// let accessAllowed;
+//javascript objects 
+let person={name:"utkarsh",age:"25"};
 
-// if(age>18)
-// {
-//     accessAllowed=true;
-// }
-// else
-// {
-//     accessAllowed=false;
-// }
-
-//let result= conditiion ? value1 : value2
-
-// let accessAllowed= (age>18)? true:false
+console.log(person.name);
+console.log(person.age);
 
 
-
-//loops : while and for 
-
-
-// let i=0;
-// while(i<5)
-// {
-//     alert(i);
-//     i++;
-// }
+//Everything in Javascript is an object 
 
 
-// let i=0;
+//indexOf
 
-// do
-// {
-//     alert(i);
-//     i++;
-// }while(i>0);
+console.log(someBigString.indexOf('utkarfrsh'));
 
 
-
-for(let i=0;i<3;i++)
-{
-    alert(i);
-}
-
-
-
-
-
+console.log(someBigString.substr(4,5));
