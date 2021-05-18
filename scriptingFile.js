@@ -31,12 +31,12 @@ let name="Utkarsh";
 
 //toString
 
-let status=true;
+// let status=true;
 
-console.log(status.toString());
+// console.log(status.toString());
 
 
-//concat 
+// //concat 
 
 
 let firstString='Hi';
@@ -72,3 +72,27 @@ console.log(someBigString.indexOf('utkarfrsh'));
 
 
 console.log(someBigString.substr(4,5));
+
+
+
+//var let const 
+
+
+
+
+console.log(x);
+var x;
+x=5;
+
+//ES5 , ES6
+
+
+//let and const 
+
+
+let y=6;
+y=7;
+
+
+const z=5;
+z=6;
