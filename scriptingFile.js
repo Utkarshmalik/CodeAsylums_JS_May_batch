@@ -1,98 +1,171 @@
 
-// immutable
-
-let str="hello";
-// let message="We are learning Javascript today";
-
-let name="Utkarsh";
 
 
-//template strings 
+// let scores=new Array();
+// let names=new Array(10);
 
-//i need to use javascript variables inside of strings  (  ` )
+// let marks=new Array(1,5,6,3,2);
 
-// let message= ` hello ${name} `;
-
-// console.log(message);
-
-
-// console.log(message[2]);
+//let arrayName=[element1,element2,element3..];
 
 
-// //concatination 
-
-// let firstName="Utkarsh";
-// let lastName="Malik";
-
-// let fullName=firstName+" " +lastName;
-
-// console.log(fullName);
+// let students=['utkarsh','Rahul','Rohit','lokesh'];
 
 
-//toString
+// console.log(students[0]);
+// console.log(students[1]);
 
-// let status=true;
+// students[3]='mohan';
 
-// console.log(status.toString());
-
-
-// //concat 
-
-
-let firstString='Hi';
-let message=firstString.concat(' ','Utkarsh',' How are you ?');
-
-console.log(message);
+// console.log(students);
 
 
 
-//split 
+//students.push('shreya');
 
-let someBigString=" Hello utkarsh how are you ?";
+//console.log(students);
 
-let substrings=someBigString.split(' ');
+// students.unshift('shrey');
 
-console.log(substrings);
+// console.log(students);
 
+//     students.pop();
 
-
-//javascript objects 
-let person={name:"utkarsh",age:"25"};
-
-console.log(person.name);
-console.log(person.age);
+//     console.log(students);
 
 
-//Everything in Javascript is an object 
-
-
-//indexOf
-
-console.log(someBigString.indexOf('utkarfrsh'));
-
-
-console.log(someBigString.substr(4,5));
+//     students.shift();
+//     console.log(students);
 
 
 
-//var let const 
+// let index=students.indexOf('Rohit');
+
+
+
+// console.log(students.length);
 
 
 
 
-console.log(x);
-var x;
-x=5;
+//Array.splice(position,num)
 
-//ES5 , ES6
+// let students=['utkarsh','Rahul','Rohit','lokesh'];
 
 
-//let and const 
+// let marks=[1,2,3,4,5,6];
+
+// let deletedMarks=marks.splice(1,2);
+
+// console.log(marks);
+// console.log(deletedMarks);
 
 
-let y=6;
-y=7;
+
+//Array.splice(position,0,new_element_1,new_element_2);
 
 
-const z=5;
-z=6;
+
+// let updatedMarks=marks.splice(3,0,8,9,40,50);
+
+// console.log(marks);
+// console.log(updatedMarks);
+
+// let updatedMarks=marks.splice(1,1,100);
+
+// console.log(marks);
+
+
+
+let numbers=[0,100,34,5,3,1,50,67];
+
+
+console.log(numbers);
+
+//array.sort(comparefunction)
+
+// function compare(a,b)
+// {
+
+// }
+
+// < 0 -> a will come first
+// >0  -> b will come first 
+// 0 
+
+// numbers.sort( function (a,b){
+
+//     if(a<b)
+//     return -1;
+
+//     if(a>b)
+//     return 1;
+
+//     return 0;
+  
+// } );
+
+
+// console.log(numbers);
+
+
+let employess=[{name:"Utkarsh",age:25,salary:500},{name:"Rahul",age:22,salary:100},{name:"Rohit",age:45,salary:40},{name:"Hitesh",age:15,salary:1000}];
+
+
+
+
+// employess.sort( function (a,b) {
+
+//     if(a.salary<b.salary)
+//     return 1;
+
+//     if(a.salary>b.salary)
+//     return -1;
+
+//     return 0;
+
+// } );
+
+// console.log(employess);
+
+
+//filter()
+
+
+// let filtertedEmployees=employess.filter(function (a) {
+//     return a.salary>=500;
+// });
+
+// console.log(filtertedEmployees);
+
+
+//forEach 
+
+
+// for(let i=0;i<employess.length;i++)
+// {
+//     console.log(employess[i]);
+// }
+
+// employess.forEach(function (value,index) {
+
+//     console.log(index);
+//     console.log(value);
+// });
+
+//map
+
+let arr=[1,2,3,4,5,6,7];
+
+// arr.forEach(function (value,index) {
+//     arr[index]=value*5;
+// });
+
+// console.log(arr);
+
+let newArray=arr.map(function (value,index) {
+
+    return value*5; 
+})
+
+console.log(newArray);
