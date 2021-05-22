@@ -77,10 +77,10 @@
 
 
 
-let numbers=[0,100,34,5,3,1,50,67];
+// let numbers=[0,100,34,5,3,1,50,67];
 
 
-console.log(numbers);
+// console.log(numbers);
 
 //array.sort(comparefunction)
 
@@ -109,7 +109,7 @@ console.log(numbers);
 // console.log(numbers);
 
 
-let employess=[{name:"Utkarsh",age:25,salary:500},{name:"Rahul",age:22,salary:100},{name:"Rohit",age:45,salary:40},{name:"Hitesh",age:15,salary:1000}];
+// let employess=[{name:"Utkarsh",age:25,salary:500},{name:"Rahul",age:22,salary:100},{name:"Rohit",age:45,salary:40},{name:"Hitesh",age:15,salary:1000}];
 
 
 
@@ -155,17 +155,193 @@ let employess=[{name:"Utkarsh",age:25,salary:500},{name:"Rahul",age:22,salary:10
 
 //map
 
-let arr=[1,2,3,4,5,6,7];
+// let arr=[1,2,3,4,5,6,7];
 
-// arr.forEach(function (value,index) {
-//     arr[index]=value*5;
-// });
+// // arr.forEach(function (value,index) {
+// //     arr[index]=value*5;
+// // });
 
-// console.log(arr);
+// // console.log(arr);
 
-let newArray=arr.map(function (value,index) {
+// let newArray=arr.map(function (value,index) {
 
-    return value*5; 
-})
+//     return value*5; 
+// })
 
-console.log(newArray);
+// console.log(newArray);
+
+// alert("Hello");
+// console.log("hello");
+
+
+
+
+// function add(a,b)
+// {
+//     return a+b;
+// }
+
+
+// const x=add(1,5);
+
+// console.log(x);
+
+
+// //parameters , arguements 
+
+
+// function randomFunction() {
+//     console.log("Hello");
+// }
+
+
+// const y=randomFunction();
+
+// console.log(y);
+
+
+
+
+//arguements object 
+
+
+
+
+
+
+
+// function add()
+// {
+
+//     let sum=0;
+
+//     for(let i=0;i<arguments.length;i++)
+//     {
+//         sum+=arguments[i];   
+//     }
+
+//     return sum;
+// }
+
+
+
+
+// console.log(add(1));
+// console.log(add(1,3));
+// console.log(add(4,7,89));
+// console.log(add(2,5,1,90));
+
+
+
+
+//Functions in Javascript are first class citizens
+
+
+// function add(a,b) {
+    
+//     return a+b;
+// }
+
+// let sum=add;
+
+
+// let result=sum(10,20);
+
+// console.log(result);
+
+
+// function average(a,b,sumFun)
+// {
+//     return sumFun(a,b)/2;
+// }
+
+// let newResult=average(10,20,sum);
+
+// console.log(newResult);
+
+
+// function multiply(a,b)
+// {
+//     return a*b;
+// }
+
+// function multiplyByFive(a)
+// {
+//     return multiply(5,a);
+// }
+
+
+// console.log(multiplyByFive(6));
+// console.log(multiplyByFive(7));
+
+
+//anonymous functions
+
+
+
+// let show=function(){
+//     console.log("Hello");
+// }
+
+
+
+//IIFE  -> Immidiately Invoked function expressions
+
+
+// (function() {
+
+//     console.log("Hello")
+// })();
+
+
+// let person={
+//     name:"Utkarsh",
+//     age:25
+// };
+
+
+// (function () {
+//         console.log(`${person.name} is ${person.age} years old`)
+//     }
+// )();
+
+
+
+
+//arrow functions (ES6)
+
+
+// let add=function (a,b) {
+//     return a+b;
+// }
+
+
+// let add= (a,b)=>{
+
+//     return a+b;
+// }
+
+
+// let someFun=()=>
+// {
+//     console.log("Inside a function body");
+// }
+
+//Callback
+
+//A callback is a function passed into another 
+//function as an argument to be executed later
+
+// let numbers=[1,2,4,5,6,9,10,15];
+
+
+// function checkOddNumber(num)
+// {
+//     return num%2;
+// }
+
+
+// const oddNumbers=numbers.filter(checkOddNumber);
+
+
+// console.log(oddNumbers);
