@@ -1,93 +1,52 @@
 
 
+//objects and prototypes
 
 
-//key : string
-//value  : 
+//Constructor Functions
 
 
-//function , methods
+//this is used inside of construcotr function : this points to the object/instance of that function
 
-
-//this inside of methods references the object who invoked that method
-
-// //this is a keyword in javascript 
-
-// let person={
-//     Firstname:"Utkarsh",
-//     lastName:"Malik",
-//     age:25,
-//     status:'single',
-//     height:'180cm',
-//     getFullName:function() {
-        
-//         return this.Firstname + " " + this.lastName;
-//     }
-// }
-
-
-// console.log(person.getFullName());
-
-
-
-// const array=[10,20,340,53,50,60,30];
-
-
-//array.reduce;
-
-
-// const result=array.reduce( (accumulator,currentValue)=>
-// {
-//     return accumulator*currentValue;
-// } ,1);
-
-// acculumulator,currentValue 
-
-// -0
-
-// firstIteration : 0,10 => 10 
-// secondIteration:10,20 =>30
-// thirdIteraton: 30,340 -> 370
-//                370+53
-
-
-//                  500+30: 530
-
-
-
-
-
-// console.log(result);
-
-
-
-
-
-// function getNames()
-// {
-//     let Firstname="Utkarsh";
-//     let lastName="Malik";
-
-//     return [Firstname,lastName];
-// }
-
-
-// let names=getNames();
-
-// console.log(names);
-
-
-
-function getNames()
-{
-     let Firstname="Utkarsh";
-     let lastName="Malik";
-
-     return {
-         Firstname,
-         lastName
-     }
+function Person(firstName,lastName){
+    this.firstName=firstName;
+    this.lastName=lastName;
 }
 
+Person.prototype.getFullName=function name() {
+    return this.firstName + " " + this.lastName;
 
-console.log(getNames());
+}
+
+console.log(Person);
+
+
+
+console.log(Person.prototype);
+
+
+     let person1= new  Person("Utkarsh","Malik");
+      let person2=new Person("Rahul","Jain");
+
+      console.log(person1.toString());
+      console.log(person2);
+     
+       console.log(person1.getFullName());
+       console.log(person2.getFullName());
+
+
+       //Person.prototype
+       console.log(person1.__proto__.__proto__);
+
+
+
+
+
+//protypes
+
+
+let arr=[1,2,3,4,5];
+
+console.log(arr.toString());
+
+
