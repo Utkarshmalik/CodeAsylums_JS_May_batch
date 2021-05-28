@@ -1,25 +1,33 @@
-//global context
-//global execution context 
 
 
-//Every time you create a new function a new execution context is created on the top of it 
-
-
-
-// x=20;
-// y=10;
-// result;
-// add=undefined;
+//Closures
 
 
 
-let x = 20,
-    y = 10;
 
-let result = add(x,y);
-console.log(result);
+// ----------------
+// message=Hi;
+// sayHi:function
 
-var add = function(x, y) {
-return x + y;
+// ------------------
+// {greeting:function()}
+
+
+
+function greeting() {
+    let message = 'Hi';
+
+    function sayHi() {
+        console.log(message);
+    }
+
+    return sayHi;
 }
+let hi = greeting();
+hi();
 
+
+
+// ---------------
+// hi=sayHi
+// greeting:finction 
