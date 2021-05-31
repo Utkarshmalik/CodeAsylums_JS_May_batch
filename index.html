@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Learning Javascript</title>
+  <meta charset="utf-8">
+  <title>JS Get Child Elements</title>
 </head>
+<style>
 
+
+  .head
+  {
+    color:blue;
+    text-align: center;
+  }
+
+  .input-section
+  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-item
+  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border:3px solid black;
+    margin:10px;  
+  }
+
+  .list-item p
+  {
+    font-size:20px;
+    color:blue;
+  }
+
+  .btn
+  {
+    width:70px;
+    height:50px;
+    margin:10px;
+  }
+
+  
+
+</style>
 <body>
-    <h1>Javascript Basics</h1>
 
-    <script src="scriptingFile.js" ></script>
+  <div class="head">
+    <h1>Todo List</h1>
+  </div>
+
+  <div class="input-section">
+    <input id="textField" type="text" name="todoValue"/>
+    <button class="btn"  id="submitBtn" >Submit</button>
+  </div>
+
+  <div class="incomplete-section">
+
+    <ul id="incomplete-list">
+
+      <!-- <div class="list-item">
+        <p>Clean the table</p>
+        <button class="btn" >Delete </button>  
+        <button class="btn">Mark as Done</button>  
+      </div>
+ -->
+
+    </ul>
+  </div>
+
+  <div class="complete-section">
+  </div>
+
+
+  <script src="scriptingFile.js" > </script>
 </body>
-
-
-
 </html>

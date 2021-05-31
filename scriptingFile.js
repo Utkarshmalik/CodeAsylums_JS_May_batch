@@ -1,33 +1,38 @@
 
 
-//Closures
 
 
 
-
-// ----------------
-// message=Hi;
-// sayHi:function
-
-// ------------------
-// {greeting:function()}
+const inputField=document.querySelector("#textField");
+const submitButton=document.querySelector("#submitBtn");
+const IncompleteList=document.querySelector("#incomplete-list");
 
 
+submitButton.addEventListener("click",()=>
+{
 
-function greeting() {
-    let message = 'Hi';
+    const newDiv=document.createElement('div');
+    newDiv.setAttribute("class","list-item");
 
-    function sayHi() {
-        console.log(message);
-    }
+    const para=document.createElement('p');
+    para.textContent=inputField.value;
 
-    return sayHi;
-}
-let hi = greeting();
-hi();
+    const DeleteButton=document.createElement('button');
+    DeleteButton.setAttribute('class','btn');
+    DeleteButton.textContent="Delete";
+
+    const MoveButton=document.createElement('button');
+    MoveButton.setAttribute('class','btn');
+    MoveButton.textContent="Mark as Done"; 
+
+    newDiv.appendChild(para);
+    newDiv.appendChild(DeleteButton);
+    newDiv.appendChild(MoveButton);
+
+
+    IncompleteList.appendChild(newDiv);
+    
+})
 
 
 
-// ---------------
-// hi=sayHi
-// greeting:finction 
