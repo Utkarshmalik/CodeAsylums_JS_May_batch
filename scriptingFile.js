@@ -3,36 +3,29 @@
 
 
 
-const inputField=document.querySelector("#textField");
-const submitButton=document.querySelector("#submitBtn");
-const IncompleteList=document.querySelector("#incomplete-list");
-
-
-submitButton.addEventListener("click",()=>
+function outerMost()
 {
+    const name1="Utkarsh";
 
-    const newDiv=document.createElement('div');
-    newDiv.setAttribute("class","list-item");
+    function inner()
+    {
+        const name2="Rahul";
 
-    const para=document.createElement('p');
-    para.textContent=inputField.value;
+        function innerMost()
+        {
+            const name3="Rohit";
 
-    const DeleteButton=document.createElement('button');
-    DeleteButton.setAttribute('class','btn');
-    DeleteButton.textContent="Delete";
+            return name1+" "+name2+" "+name3;
+        }
 
-    const MoveButton=document.createElement('button');
-    MoveButton.setAttribute('class','btn');
-    MoveButton.textContent="Mark as Done"; 
+        return innerMost;
+    }
 
-    newDiv.appendChild(para);
-    newDiv.appendChild(DeleteButton);
-    newDiv.appendChild(MoveButton);
+    return inner;
+}
 
+const partial=outerMost();
+const anotherPartial=partial();
+const data=anotherPartial();
 
-    IncompleteList.appendChild(newDiv);
-    
-})
-
-
-
+console.log(data);
